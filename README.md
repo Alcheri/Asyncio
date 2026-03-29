@@ -19,8 +19,8 @@
   <a href="https://github.com/Alcheri/Asyncio/actions/workflows/lint.yml">
     <img src="https://github.com/Alcheri/Asyncio/actions/workflows/lint.yml/badge.svg" alt="Lint">
   </a>
-  <a href="https://codecov.io/gh/Alcheri/Asyncio">
-    <img src="https://codecov.io/gh/Alcheri/Asyncio/branch/OpenAI-Asyncio/graph/badge.svg" alt="Coverage">
+  <a href="https://github.com/Alcheri/MyDNS/security/code-scanning">
+    <img src="https://github.com/Alcheri/MyDNS/actions/workflows/codeql.yml/badge.svg" alt="CodeQL">
   </a>
   <img src="https://img.shields.io/badge/python-3.9%2B-blue.svg" alt="Python">
   <img src="https://img.shields.io/badge/code%20style-black-black" alt="Code style: black">
