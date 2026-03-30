@@ -1,4 +1,4 @@
-<!-- README Header -->
+<!-- An asynchronous OpenAI plugin for Limnoria. -->
 <p align="center">
   <img src="docs/images/puss-logo.svg" width="220" alt="Puss logo">
 </p>
