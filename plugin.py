@@ -85,7 +85,9 @@ def _create_chat_completion_with_fallback(openai_client, **kwargs):
 
     candidates = _chat_model_candidates()
     if ACTIVE_CHAT_MODEL and ACTIVE_CHAT_MODEL in candidates:
-        candidates = [ACTIVE_CHAT_MODEL] + [m for m in candidates if m != ACTIVE_CHAT_MODEL]
+        candidates = [ACTIVE_CHAT_MODEL] + [
+            m for m in candidates if m != ACTIVE_CHAT_MODEL
+        ]
 
     last_error = None
     for model_name in candidates:
@@ -95,17 +97,16 @@ def _create_chat_completion_with_fallback(openai_client, **kwargs):
                 **kwargs,
             )
             if ACTIVE_CHAT_MODEL != model_name:
-                log.warning(
-                    "[Asyncio] Chat model switched to '{}'".format(model_name)
-                )
+                log.warning("[Asyncio] Chat model switched to '{}'".format(model_name))
             ACTIVE_CHAT_MODEL = model_name
             return response
         except Exception as e:
             last_error = e
             if _is_model_unavailable_error(e):
                 log.warning(
-                    "[Asyncio] Chat model '{}' unavailable, trying next fallback: {}"
-                    .format(model_name, e)
+                    "[Asyncio] Chat model '{}' unavailable, trying next fallback: {}".format(
+                        model_name, e
+                    )
                 )
                 continue
             raise
