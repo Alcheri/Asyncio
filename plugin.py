@@ -491,6 +491,7 @@ class Asyncio(callbacks.Plugin):
 
     chatversion = wrap(chatversion)  # pyright: ignore[reportAssignmentType]
 
+
 Class = Asyncio
 
 # vim:set shiftwidth=4 softtabstop=4 expandtab textwidth=79:
