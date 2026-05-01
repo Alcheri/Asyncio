@@ -9,7 +9,7 @@ This project is maintained by:
 GitHub automatically tracks all contributors to this repository.
 You can view the full, up‑to‑date list here:
 
-[GitHub Contributors](../graphs/contributors)
+[GitHub Contributors](https://github.com/Alcheri/Asyncio/graphs/contributors)
 
 If you have contributed code, documentation, or fixes, your name will appear there.
 
